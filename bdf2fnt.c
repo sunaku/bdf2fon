@@ -17,7 +17,9 @@
 #include <errno.h>
 #include <ctype.h>
 #include <fcntl.h>
+#ifndef unix
 #include <io.h>
+#endif
 #include "fontstruc.h"
 
 #undef VGA_RESOLUTION
@@ -596,6 +598,7 @@ int main(int argc, char *argv[])
       name = *argv ;
     } else usage();
   }
+#ifndef unix
   if ( outfile == stdout ) {
     int fd = fileno(stdout) ;
     if ( setmode(fd, O_BINARY) < 0 ) {
@@ -603,6 +606,7 @@ int main(int argc, char *argv[])
       exit(1);
     }
   }
+#endif
 
   if ( ! readbdf(infile, thisfont) ) {
     fprintf(stderr, "%s: problem reading BDF font file\n", program);

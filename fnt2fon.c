@@ -23,7 +23,11 @@
 #include <string.h>
 #include <errno.h>
 #include <fcntl.h>
+#ifdef unix
+#include <unistd.h>
+#else
 #include <io.h>
+#endif
 #include "fontstruc.h"
 
 static const BYTE MZ_hdr[] = {
