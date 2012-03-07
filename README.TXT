@@ -5,7 +5,7 @@ bdf2fnt
   Copyright (C) 2009 grischka@users.sf.net
   License: GNU General Public License (GPL) version 2
 
-fnttofon
+fnt2fon
   Combine several fnt files in one fon file
   Copyright 2004 Huw Davies
   License: GNU Lesser General Public License

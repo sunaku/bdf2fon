@@ -41,7 +41,7 @@ static void usage(void)
     "Modified for variable-width fonts\n"
     "Copyright (C) 2009 grischka@users.sf.net\n"
     "\n"
-    "Usage: bdf2fon [-q] [-c] [infile [outfile [fontname]]]\n"
+    "Usage: bdf2fnt [-q] [-c] [infile [outfile [fontname]]]\n"
     "\n"
     "Options:\n"
     " -q\t\tQuiet; do not print progress (not currently used)\n"
